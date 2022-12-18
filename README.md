@@ -19,4 +19,18 @@ se a ONU está Up ou Down e a potência da ONU
 ### Execução
 Essa é a execução do comando final, ele irá voltar as informações do MAC da ONU do cliente, a PON e o ID que ele está, não requer alterações
 
+## Insatalação 
+Depois que você alterar o script de acordo com seu critério, recomendo mover o arquivo dentro da pasta /usr/bin, assim irá facilitar a chamada do comando
+e também será preciso dar poder de execução ao comando:
+$ sudo chmod +x procurar.sh
+
+E se quiser mover ele pra pasta /usr/bin pode chamar ele usando o nome que desejar, nesse caso vou usar: procurar
+$ sudo cp -rfv procurar.sh /usr/bin/procurar
+
+Pra fazer a procura basta chamar o script e colocar o mac do Clinete: exemplo
+$ ./procurar.sh 00:1B:44:11:3A:B7
+
+Ou se você moveu ele pra pasta /usr/bin/procurar, basta executar procurar seguido do MAC:
+$ procurar 00:1B:44:11:3A:B7
+
 # Autor: Edegar Junior - LOCAL INTERNET

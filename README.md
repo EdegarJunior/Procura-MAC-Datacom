@@ -1,4 +1,4 @@
-# Manual so script
+# Manual do script
 
 Nessa pequena documentação vou mostrar como script funciona e mostra quais as configurações principais que devem ser alteradas
 

@@ -15,4 +15,4 @@ function ProcuraOLT()
 conectar-olt show running-config service-port $(conectar-olt show mac-address-table \| include $1 | tr 'A-Z' 'a-z' | awk '{print $1}' | tr -d '-' | tr -d 'a-z') | awk '{print $2}' | grep "/" > /tmp/mac-pon && conectar-olt show running-config service-port $(conectar-olt show mac-address-table \| include $1 | tr 'A-Z' 'a-z' | awk '{print $1}' | tr -d '-' | tr -d 'a-z') | awk '{print $4}' | grep "[0-9]" > /tmp/mac-onu
 }
 ### Execução
-Procura-OLT $(conversor-mac $1); Procura-OLT $(conversor-mac $1); conectar-olt show interface gpon $(cat /tmp/mac-pon) onu $(cat /tmp/mac-onu) | grep -E "Name|Serial|Rx|Operati" && printf "pon " && cat /tmp/mac-pon && printf "onu " && cat /tmp/mac-onu &&  echo "OLT função 1"; 
+Procura-OLT $(conversor-mac $1); Procura-OLT $(conversor-mac $1); conectar-olt show interface gpon $(cat /tmp/mac-pon) onu $(cat /tmp/mac-onu) | grep -E "Name|Serial|Rx|Operati" && printf "pon " && cat /tmp/mac-pon && printf "onu " && cat /tmp/mac-onu 

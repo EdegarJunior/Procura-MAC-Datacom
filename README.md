@@ -16,3 +16,5 @@ se a ONU está Up ou Down e a potência da ONU
 
 ### Execução
 Essa é a execução do comando final, ele irá voltar as informações do MAC da ONU do cliente, a PON e o ID que ele está, não requer alterações
+
+Autor: Edegar Junior - LOCAL INTERNET

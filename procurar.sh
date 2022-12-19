@@ -7,7 +7,7 @@ function conectar-olt() {
 function conversor() {
 	echo $1 | tr 'A-Z' 'a-z'
 }
-## Procurar MAC na Barra
+## Procurar MAC na olt
 function procura-mac() {
 	conectar-olt show running-config service-port $(conectar-olt show mac-address-table \| include $1 | tr 'A-Z' 'a-z' | awk '{print $1}' | tr -d '-' | tr -d 'a-z') | awk '{print $2}' | grep "/" > /tmp/mac-pon && conectar-olt show running-config service-port $(conectar-olt show mac-address-table \| include $1 | tr 'A-Z' 'a-z' | awk '{print $1}' | tr -d '-' | tr -d 'a-z') | awk '{print $4}' | grep "[0-9]" > /tmp/mac-onu
 }

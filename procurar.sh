@@ -1,7 +1,7 @@
 #!/bin/bash
-## Conectar OLT
+## Conectar OLT obs: Substitua os dados dentro das aspas de acordo com os dados da sua OLT
 function conectar-olt() {
-	sshpass -p "sua-senha" ssh seu-login@ip-da-olt "$@"
+	sshpass -p "sua-senha" ssh "seu-login"@"ip-da-olt" "$@"
 }
 ## Converter Maiusculo em Minusculo
 function conversor() {

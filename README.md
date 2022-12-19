@@ -1,3 +1,13 @@
+# Requisitos minimos:
+
+ ° Servidor telnet instalado na sua distribuição linux
+ 
+ ° sshpass instalado na maquina
+ 
+ é preciso fazer um acesso via ssh normal na sua OLT pra gerar as chaves antes, comando abaixo:
+    
+    ssh nome-de-usuario@ip-da-olt
+
 # Campos dentro do script que precisam alterar:
 
 Você poder utilizar um editor de texto qualquer pra editar os parametros, recomendo vim ou nano

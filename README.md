@@ -21,6 +21,7 @@ Primeiro de tudo você precisa dar permissão de execução para o script, você
     chmod +x mac
     
 Agora basta executar o comando, alterando exemplo para o MAC que deseja procurar na sua OLT
+    
     ./mac MAC-QUE-DESEJA-CONSULTAR
 
 # Aqui abaixo mostrarei cada função do script, como ele funciona e por ultimo como executar o script

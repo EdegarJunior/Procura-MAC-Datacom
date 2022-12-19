@@ -1,19 +1,27 @@
 # Campos dentro do script que precisam alterar:
+
+Você poder utilizar um editor de texto qualquer pra editar os parametros, recomendo vim ou nano
+
+Esses são os parametros que precisam de alteração:
+
+
 "sua-senha" = Você vai substituir esse campo, inclusive as aspas também e vai deixar apenas sua senha SSH da OLT
 
 "seu-login" = Você vai substituir esse campo, inclusive as aspas também e vai deixar apenas o seu login SSH da OLT
 
 "ip-da-olt" = Você vai substituir esse campo, inclusive as aspas também e vai deixar o IP de acesso SSH da sua OLT
+o resultado final deverá ficar assim:
+
+sshpass -p 1234 ssh admin@127.0.0.1 "$@"
 
 # Como rodar o script
 
 Primeiro de tudo você precisa dar permissão de execução para o script, você pode utilizar o comando:
 
-    chmod +x procurar.sh
+    chmod +x mac
     
-Se você quiser mover o comando para a pasta /usr/bin você poderá chamar o comando utilizando apenas o nome que preferir
-No caso vou utilizar o nome procurar
-    sudo mv procurar.sh /usr/bin/procurar
+Agora basta executar o comando, alterando exemplo para o MAC que deseja procurar na sua OLT
+    ./mac MAC-QUE-DESEJA-CONSULTAR
 
 # Aqui abaixo mostrarei cada função do script, como ele funciona e por ultimo como executar o script
 Nessa pequena documentação vou mostrar como script funciona e mostra quais as configurações principais que devem ser alteradas

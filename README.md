@@ -8,6 +8,7 @@
 # Como rodar o script
 
 Primeiro de tudo você precisa dar permissão de execução para o script, você pode utilizar o comando:
+
     chmod +x procurar.sh
     
 Se você quiser mover o comando para a pasta /usr/bin você poderá chamar o comando utilizando apenas o nome que preferir

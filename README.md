@@ -5,12 +5,12 @@ Você poder utilizar um editor de texto qualquer pra editar os parametros, recom
 Esses são os parametros que precisam de alteração:
 
 
-"sua-senha" = Você vai substituir esse campo, inclusive as aspas também e vai deixar apenas sua senha SSH da OLT
+"sua-senha" = Você vai substituir esse campo pela sua senha SSH da OLT
 
-"seu-login" = Você vai substituir esse campo, inclusive as aspas também e vai deixar apenas o seu login SSH da OLT
+"seu-login" = Você vai substituir esse campo e colocar seu login SSH da OLT
 
-"ip-da-olt" = Você vai substituir esse campo, inclusive as aspas também e vai deixar o IP de acesso SSH da sua OLT
-o resultado final deverá ficar assim:
+"ip-da-olt" = Você vai substituir esse campo e vai deixar o IP de acesso SSH da sua OLT
+o resultado final deverá ficar igual o exemplo abaixo:
 
 sshpass -p 1234 ssh admin@127.0.0.1 "$@"
 
@@ -23,6 +23,16 @@ Primeiro de tudo você precisa dar permissão de execução para o script, você
 Agora basta executar o comando, alterando exemplo para o MAC que deseja procurar na sua OLT
     
     ./mac MAC-QUE-DESEJA-CONSULTAR
+    
+# Como instalar o script
+Se dejar você poderá instalar o script dentro da sua /usr/bin e chamar o script digitando apenas o nome que desejar, no exemplo utilizei o nome "exemplo"
+você pode alterar pra outro nome que desejar
+
+    sudo cp -rfv mac /usr/bin/exemplo
+    
+Agora pra executar o comando basta chamar o nome do arquivo que você moveu dentro da pasta bin
+
+    exemplo MAC-QUE-DESEJA-CONSULTAR
 
 # Aqui abaixo mostrarei cada função do script, como ele funciona e por ultimo como executar o script
 Nessa pequena documentação vou mostrar como script funciona e mostra quais as configurações principais que devem ser alteradas
